@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOVAMI 名片</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 768px;
+      aspect-ratio: 768 / 1358;
+      overflow: hidden;
+    }
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hotspot {
+      position: absolute;
+      z-index: 10;
+    }
+    #line {
+      left: 9%;
+      top: 74%;
+      width: 18%;
+      height: 7%;
+    }
+    #heart {
+      left: 41%;
+      top: 74%;
+      width: 18%;
+      height: 7%;
+    }
+    #ig {
+      left: 71%;
+      top: 74%;
+      width: 18%;
+      height: 7%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="background.jpg" alt="LOVAMI 名片">
+    <a href="https://lin.ee/iicUmv0" class="hotspot" id="line" title="加入 LINE 好友"></a>
+    <a href="#" class="hotspot" id="heart" title="播放可愛音效" onclick="document.getElementById('sound').play()"></a>
+    <a href="https://www.instagram.com/amiewang0313?igsh=MWhqYzRwYTg0enhvcQ%3D%3D&utm_source=qr" class="hotspot" id="ig" title="查看 IG"></a>
+    <audio id="sound" src="cute_sound.mp3" preload="auto"></audio>
+  </div>
+</body>
+</html>
